@@ -75,6 +75,11 @@ if you define some else, So run with that
 ```
 your.host\admin
 ```
+username and Password to login 
+```
+Username : superadmin
+Password : superadmin
+```
 
 ## Now Enjoy
 

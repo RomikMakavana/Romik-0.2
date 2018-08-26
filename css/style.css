@@ -1,0 +1,95 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+h1.error{
+    background-image: linear-gradient(to right, #073767, #ea230c 50%, #0c0201);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.romik-message{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    background: repeating-linear-gradient(to bottom right, red ,blue,green ,yellow, skyblue);
+    background-size: 600vw 600vw;
+    background-position: 0 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 5s infinite linear;
+}
+@keyframes moveBg{
+    100%{
+        background-position: 600vw 600vw;
+    }
+}
+.romik{
+    font-size: 75px;		
+}
+.romik>sub{
+    font-size: 25px;		
+}
+
+.romik,
+.romik>sub{
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-weight: 100;	
+    background-image: linear-gradient(to right, red 25%, green 50%, blue 75%);
+    /*background-image: linear-gradient(to right, blue 25%, green 50%, red 75%);*/
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text 3s infinite;
+    transition: left 300ms linear;
+}
+.gedeant{
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-weight: 100;	
+    background-image: linear-gradient(to right, red 25%, green 50%, blue 75%);
+    /*background-image: linear-gradient(to right, blue 25%, green 50%, red 75%);*/
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text 3s infinite alternate;
+    transition: left 300ms linear;
+}
+@keyframes text{
+    0%{ background-image:linear-gradient(to right, red 25%, green 50%, blue 75%);}
+    50%{ background-image:linear-gradient(to right, green 25%, blue 50%, red 75%);}
+    100%{ background-image: linear-gradient(to right, blue 25%, red 50%, green 75%);}
+}
+
+.login-form{
+    font-variant: small-caps;
+    margin: 50% auto;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 20px 20px;
+    position: relative;
+}
+.login-form::after{
+    position: absolute;
+    content: '';
+    height: 101%;
+    width: 101%;
+    background: linear-gradient(red,blue);
+    top: -0.5%;
+    left: -0.5%;
+    z-index: -1;
+    border-radius: 3px;
+    opacity: 0.5;
+    filter: blur(10px);
+    animation: text 2s infinite alternate;
+}
+.btn-login{
+    border:1px solid #0000ff73;
+}

@@ -91,4 +91,4 @@ Enjoy and develop your project with our framework, if you have query just commen
 
 ## License
 
-This Framework is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This Framework is licensed under the MIT License - see the [blob/master/LICENSE](LICENSE.md) file for details
